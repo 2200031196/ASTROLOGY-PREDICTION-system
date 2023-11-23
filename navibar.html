@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Astrology</a>
+        <a class="nav-link active" aria-current="page" href="/polls"style="color:white;">Home</a>
+        <a class="nav-link" href="/register"style="color:white;">Register</a>
+         <a class="nav-link" href="/login"style="color:white;">Login</a>
+        {% if user.is_authenticated %}
+        <p style="color: white;">Hello, {{user.username}}!</p>
+        <a href="/" style="color:white;">Logout</a>
+        </p>
+        {% endif %}
+    </div>
+</nav>
